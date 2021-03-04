@@ -173,8 +173,8 @@ abstract class GeneratorCommand extends Command
     protected function replaceNamespace(&$stub, $name)
     {
         $stub = str_replace(
-            ['DummyNamespace', 'DummyRootNamespace', 'NamespacedDummyUserModel'],
-            [$this->getNamespace($name), $this->rootNamespace(), $this->userProviderModel()],
+            ['DummyNamespace', 'DummyRootNamespace', 'NamespacedDummyUserModel', 'DummyUse'],
+            [$this->getNamespace($name), $this->rootNamespace(), $this->userProviderModel(), class_basename($this->userProviderModel())],
             $stub
         );
 
