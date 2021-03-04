@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use DummyRootNamespaceUser;
+use NamespacedDummyUserModel;
 use NamespacedDummyModel;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -13,10 +13,10 @@ class DummyClass
     /**
      * Determine whether the user can view any dummyPluralModelName.
      *
-     * @param  DummyRootNamespaceUser  $user
+     * @param  DummyUser  $user
      * @return mixed
      */
-    public function viewAny(User $user)
+    public function viewAny(DummyUser $user)
     {
         //
     }
@@ -24,11 +24,11 @@ class DummyClass
     /**
      * Determine whether the user can view the dummyModelName.
      *
-     * @param  DummyRootNamespaceUser  $user
-     * @param  DummyRootNamespaceDummyModel  $dummyModelName
+     * @param  DummyUser  $user
+     * @param  DummyModel  $dummyModelName
      * @return mixed
      */
-    public function view(User $user, DummyModel $dummyModelName)
+    public function view(DummyUser $user, DummyModel $dummyModelName)
     {
         //
     }
@@ -36,10 +36,10 @@ class DummyClass
     /**
      * Determine whether the user can create dummyPluralModelName.
      *
-     * @param  DummyRootNamespaceUser  $user
+     * @param  DummyUser  $user
      * @return mixed
      */
-    public function create(User $user)
+    public function create(DummyUser $user)
     {
         //
     }
@@ -47,11 +47,11 @@ class DummyClass
     /**
      * Determine whether the user can update the dummyModelName.
      *
-     * @param  DummyRootNamespaceUser  $user
-     * @param  DummyRootNamespaceDummyModel  $dummyModelName
+     * @param  DummyUser  $user
+     * @param  DummyModel  $dummyModelName
      * @return mixed
      */
-    public function update(User $user, DummyModel $dummyModelName)
+    public function update(DummyUser $user, DummyModel $dummyModelName)
     {
         //
     }
@@ -59,11 +59,11 @@ class DummyClass
     /**
      * Determine whether the user can delete the dummyModelName.
      *
-     * @param  DummyRootNamespaceUser  $user
-     * @param  DummyRootNamespaceDummyModel  $dummyModelName
+     * @param  DummyUser  $user
+     * @param  DummyModel  $dummyModelName
      * @return mixed
      */
-    public function delete(User $user, DummyModel $dummyModelName)
+    public function delete(DummyUser $user, DummyModel $dummyModelName)
     {
         //
     }
